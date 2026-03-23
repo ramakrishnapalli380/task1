@@ -1,60 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9naW58ZW58MHx8MHx8fDA%3D");
+            background-size: cover;
+            min-height: 90vh;
+        }
+
+        .child {
+            background-color: white;
+            width: 30%;
+            text-align: center;
+            padding: 20px 10px 10px;
+            font-family: sans-serif;
+            margin: 10% 25% 10% auto;
+            border-radius: 10px;
+        }
+
+        .form {
+            margin: 2% 0%;
+        }
+
+        .form input {
+            padding: 5px;
+            width: 80%;
+            font-size: 1rem;
+            border: 1px solid rgba(0, 0, 0, 5);
+            border-radius: 5px;
+        }
+
+        Select {
+            width: 83%;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        .form-checkbox {
+            text-align: left;
+            margin-left: 10px;
+            width: 80%;
+            padding: 5px;
+        }
+
+        .form-checkbox label {
+            display: block;
+            margin: 5px 0;
+
+        }
+        .btn-grad {
+  background-image: linear-gradient(to right, #2b5876 0%, #4e4376 51%, #2b5876 100%);
+}
+
+.btn-grad {
+  margin: 10px;
+  margin-left: 10%;
+  width:80%;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  border: none;
+  
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+    </style>
 </head>
+
 <body>
-    <form action="./login.html">
-        
-    <input type="text" placeholder="User name" name="name" required/><br/>
 
-    <input type="email" placeholder="Enetr email" name="email" required><br/>
+    <form action="./login.html" class="child">
+        <h3>REGISTRATION</h3>
+        <div class="form">
+            <input type="text" placeholder="User name" name="name" required /><br />
 
-    <input type="password" placeholder="Enter password" name="password" required/><br/>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="Enter email" name="email" required><br />
+        </div>
+        <div class="form">
+            <input type="password" placeholder="Enter password" name="password" required /><br />
+        </div>
+        <div class="form">
+            <input type="password" placeholder="Correct password" name="password" />
+        </div>
+        <div class="form">
+            <input type="mobilenumber" placeholder="Mobile Number" name="mobilenumber">
+        </div>
+        <div class="form">
+            <select>
+                <option value="">Select Your Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <div class="form-checkbox">
+            <p>Qualification :</p>
+            <input type="checkbox" value="10th" /> 10th
+            <input type="checkbox" value="Inter" />Inter
+            <input type="checkbox" value="Diploma" />Diploma
+            <input type="checkbox" value="Btech" />Btech
 
-    <input type="password" placeholder="Correct password" name="password"/><br/>
-
-    <div>
-        Gender:
-        <input type="radio" id="gmale" name="gender" />
-        <label for="gmale">Male</label>
-        <input type="radio" id="gfemale" name="gender">
-        <label for="gfemale">Female</label>
-    </div>
-    <div>
-        Qualification:
-        <input type="checkbox" value="10th"/> 10th
-        <input type="checkbox" value="Inter"/>Inter
-        <input type="checkbox" value="Diploma"/>Diploma
-        <input type="checkbox" value="Btech"/>Btech
-
-    </div>
-    <div>
-        <label for="" required>Date of Birth</label>
-        <input type="date" value="date">
-    </div>
-    <div>
-    <select>
-        <option value="SelcetCity">SelectCity</option>
-        <option value="Vijayawada">Vijayawada</option>
-        <option value="Vizag">Vizag</option>
-        <option value="Hyd">Hyd</option>
-        <option value="Benguluru">Benguluru</option>
-        <option value="Chennai">Chennai</option>
-    </select>   
-    </div>
-    
-    <textarea name="address" id="address"></textarea>
-    <label for="address">Address</label><br/>
+        </div>
+        <div class="form">
+            <select>
+                <option value="">Select Your City</option>
+                <option value="Vijayawada">Vijayawada</option>
+                <option value="Vizag">Vizag</option>
+                <option value="Hyd">Hyd</option>
+                <option value="Benguluru">Benguluru</option>
+                <option value="Chennai">Chennai</option>
+            </select>
 
 
-    
-    <div>
-        <button>Register</button>
-    </div>
+
+
+            <div>
+                <button class="btn-grad">Register</button>
+            </div>
+            <div>
+                Have already an account?
+                <a href="./login.html">Login here</a>
+            </div>
     </form>
 
 </body>
+
 </html>

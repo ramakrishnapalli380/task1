@@ -1,23 +1,105 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <style>
+        body {
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/072/328/135/small/a-piece-of-paper-with-a-wooden-gavel-and-some-leaves-photo.jpeg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 90vh;
+
+
+        }
+
+        .parent-container {
+            background-color:white;
+            width: 30%;
+            text-align: center;
+            padding: 3px 10px 10px 10px;
+            font-family: sans-serif;
+            margin: 12% auto 0% auto;
+            border-radius: 10px;
+            position: fixed;
+            margin-left: 35%;
+
+
+        }
+
+        .parent-container a {
+            color: black;
+            font-weight: bold;
+
+
+        }
+
+        .form-field {
+            margin: 5% 0%;
+
+
+        }
+
+        .form-field input {
+            padding: 10px;
+            width: 80%;
+            font-size: 0.8rem;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+
+        .btn-grad {
+            background-image: linear-gradient(to right, #414d0b 0%, #727a17 51%, #414d0b 100%);
+            margin: 10px;
+            margin-left: 10%;
+            width: 80%;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            outline: none;
+            border: none;
+        }
+
+        .btn-grad:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
 </head>
+
 <body>
-    <form action="./biography.html">
+    <form class="parent-container" action="./biography.html">
+        <h2>Login</h2>
+        <div class="form-field">
+            <input type="Email" placeholder="Enter Email" name="email" required>
+        </div>
+        <div class="form-field">
+            <input type="Password" placeholder="Enter Password" name="Password" required>
+        </div>
+        <div class="form-field">
+            <button class="btn-grad">Login</button>
 
-    <input type="text" placeholder="User name" name="name" required/><br/>
-
-    <input type="password" placeholder="Enter password" name="password" required/><br/>
-    <a href="">Forget Password</a>
-
-    <input type="date" placeholder="date of birth" name="date"><br/>
-    <p>Don't have an account <a href="./index.html">Register</a></p>
-
-    <button>Login</button>
+        </div>
+        <div class="form-field">
+            <a href="#">Forgot Password?</a>
+        </div>
+        <div class="form-field">
+            Don't have an account?
+            <a href="./index.html">Register</a>
+        </div>
     </form>
-    
 </body>
+
 </html>
